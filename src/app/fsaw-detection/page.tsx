@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title: pageTitle,
   description: pageDescription,
   alternates: {
-    canonical: '/fsaw-detection',
+    canonical:'https://tfsaw-greenflag.vercel.app/fsaw-detection',
   },
   openGraph: {
     title: pageTitle,
     description: pageDescription,
-    url: '/fsaw-detection',
+    url: 'https://tfsaw-greenflag.vercel.app/fsaw-detection',
     images: [
       {
         url: siteMetadata.socialImage,

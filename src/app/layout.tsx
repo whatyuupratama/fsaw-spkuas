@@ -34,9 +34,9 @@ export const metadata: Metadata = {
   publisher: siteMetadata.publisher,
   category: 'technology',
   alternates: {
-    canonical: '/',
+    canonical: 'https://tfsaw-greenflag.vercel.app/',
     languages: {
-      'id-ID': '/',
+     'id-ID': 'https://tfsaw-greenflag.vercel.app/',
     },
   },
   openGraph: {
