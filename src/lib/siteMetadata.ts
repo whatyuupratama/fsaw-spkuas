@@ -28,7 +28,7 @@ export const siteMetadata = {
   author: 'Wahyu Pratama',
   publisher: 'Fuzzy SAW Lab',
   locale: 'id_ID',
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://tfsaw-greenflag.vercel.app',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000',
   socialImage: '/showcred.png',
   twitterHandle: '@fuzzysawlab',
 };

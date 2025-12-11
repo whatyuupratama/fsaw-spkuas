@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 const metadataBase = new URL(siteMetadata.siteUrl);
+const canonicalUrl = metadataBase.href;
 
 export const metadata: Metadata = {
   metadataBase,
@@ -34,14 +35,14 @@ export const metadata: Metadata = {
   publisher: siteMetadata.publisher,
   category: 'technology',
   alternates: {
-    canonical: 'https://tfsaw-greenflag.vercel.app/',
+    canonical: canonicalUrl,
     languages: {
-     'id-ID': 'https://tfsaw-greenflag.vercel.app/',
+      'id-ID': canonicalUrl,
     },
   },
   openGraph: {
     type: 'website',
-    url: '/',
+    url: canonicalUrl,
     title: `${siteMetadata.tagline} | ${siteMetadata.name}`,
     description: siteMetadata.description,
     siteName: siteMetadata.name,
