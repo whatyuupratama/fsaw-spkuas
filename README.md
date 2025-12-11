@@ -1,9 +1,9 @@
 <h1 align="center">🟢 GreenFlag Fuzzy SAW</h1>
 <p align="center">Dashboard interaktif buat ngeranking alternatif laboratorium pakai Fuzzy Simple Additive Weighting.</p>
 <p align="center">
-  <a href="https://skipsi-greenflag.vercel.app/">Demo</a>
+  <a href="https://fsaw-greenflag.vercel.app/">Demo</a>
   ·
-  <a href="https://github.com/whatyuupratama/skipsi-greenflag">Repo</a>
+  <a href="https://github.com/whatyuupratama/fsaw-spkuas">Repo</a>
 </p>
 
 ---
