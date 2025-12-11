@@ -85,9 +85,8 @@ export const metadata: Metadata = {
   //   },
   // },
   other: {
-    "google-site-verification": "ABCDEFG12345",
+    "google-site-verification": "kMNqvPI4Kru36y8Cx120wCZ8uOImghQ0YwaG0w-Bgj0",
   },
-  
 };
 
 export default function RootLayout({
