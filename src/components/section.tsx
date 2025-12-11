@@ -1,15 +1,13 @@
 "use client";
-
-import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import IconTeam from '@/components/iconteam';
-import { GridPatternDemo } from '@/components/fragments/molecule/GridPatternDemo';
+// import { GridPatternDemo } from '@/components/fragments/molecule/GridPatternDemo';
+import {GridPatternCost} from "@/components/molecule/GridPatternCost"
 import { ShimmerButton } from '@/components/magicui/shimmer-button';
 import { TextGenerateEffect } from '@/components/ui/text-generate-effect';
 import { cn } from '@/lib/utils';
-
+import Navbar from '@/components/navbar'
 const world = `Laboratorium Keputusan Fuzzy SAW`;
 
 type NoteItem = {
@@ -101,7 +99,8 @@ const Section = () => {
       id='home-section'
       className='relative flex w-full min-h-screen items-start justify-center overflow-hidden py-8 md:py-14'
     >
-      <GridPatternDemo className='absolute inset-0 h-full w-full' />
+      <Navbar/>
+      <GridPatternCost className='absolute inset-0 h-full w-full' />
       <div className='relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 md:px-8'>
         <div className='flex flex-col gap-4 md:gap-6'>
           <div className='md:hidden'>
@@ -134,7 +133,6 @@ const Section = () => {
 
             <div className='relative flex w-full max-w-[520px] flex-col items-center gap-8 md:flex-row md:items-center md:justify-end'>
               <div className='relative h-56 w-56 overflow-hidden rounded-xl sm:h-72 sm:w-72 md:h-80 md:w-80 lg:h-96 lg:w-96'>
-                {/* <Image src='/gigii.png' alt='Logo' width={600} height={600} className='object-cover' /> */}
               </div>
               <div className='hidden md:flex -mt-10 flex-col items-end gap-10'>
                 {rightNotes.map((note, index) => (

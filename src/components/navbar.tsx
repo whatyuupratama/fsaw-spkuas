@@ -28,7 +28,7 @@ const Navbar = () => {
     >
       <div className='mx-auto flex justify-between items-center max-w-7xl h-full px-4 sm:px-6'>
         <Link href='/' className='text-3xl md:text-5xl font-bold'>
-          {/* <Image src='/gigi.png' alt='Logo' width={70} height={70} /> */}
+          <Image src='/fsaw.png' alt='Logo' width={90} height={90} />
         </Link>
         <motion.div
           className='flex gap-3 items-center'

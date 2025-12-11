@@ -1,8 +1,5 @@
-import Home from '@/components/Home/page';
+import Section from '@/components/section';
+
 export default function Page() {
-  return (
-    <div>
-      <Home />
-    </div>
-  );
+  return <Section />;
 }

@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { siteMetadata } from '@/lib/siteMetadata';
-import { Toaster } from '@/components/ui/sonner';
+// import { Toaster } from '@/components/ui/sonner';
 import { SmoothCursor } from '@/components/ui/smooth-cursor';
 
 const geistSans = Geist({
@@ -75,9 +75,9 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/gigi.png',
-    shortcut: '/gigi.png',
-    apple: '/gigi.png',
+    icon: '/fsaw.png',
+    shortcut: '/fsaw.png',
+    apple: '/fsaw.png',
   },
   // verification: {
   //   other: {
@@ -106,7 +106,7 @@ export default function RootLayout({
       '@type': 'Organization',
       name: siteMetadata.publisher,
       url: siteMetadata.siteUrl,
-      logo: `${metadataBase.origin}/gigi.png`,
+      logo: `${metadataBase.origin}/fsaw.png`,
     },
     potentialAction: {
       '@type': 'SearchAction',
@@ -125,7 +125,7 @@ export default function RootLayout({
         />
         {children}
         <SmoothCursor />
-        <Toaster />
+        {/* <Toaster /> */}
       </body>
     </html>
   );
