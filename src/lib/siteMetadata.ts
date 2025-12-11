@@ -7,6 +7,8 @@ export const siteMetadata = {
   keywords: [
     'fuzzy saw',
     'fuzzy greenflag',
+    'fuzzy saw greenflag',
+    'fuzzy saw laboratorium',
     'greenflag fuzzy lab',
     'laboratorium fuzzy',
     'triangular fuzzy number',
@@ -20,11 +22,13 @@ export const siteMetadata = {
     'fuzzy skipsi',
     'greenflag decision lab',
     'deteksi fuzzy greenflag',
+    'fuzzy saw laboratory',
+    'laboratorium fuzzy saw',
   ],
   author: 'Wahyu Pratama',
   publisher: 'Fuzzy SAW Lab',
   locale: 'id_ID',
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://skipsi-greenflag.vercel.app',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://tfsaw-greenflag.vercel.app',
   socialImage: '/showcred.png',
   twitterHandle: '@fuzzysawlab',
 };
