@@ -94,26 +94,42 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    name: siteMetadata.name,
-    url: siteMetadata.siteUrl,
-    headline: siteMetadata.tagline,
-    description: siteMetadata.description,
-    inLanguage: 'id-ID',
-    publisher: {
+  const baseImage = `${metadataBase.origin}${siteMetadata.socialImage}`;
+
+  const structuredData = [
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: siteMetadata.name,
+      url: siteMetadata.siteUrl,
+      headline: siteMetadata.tagline,
+      description: siteMetadata.description,
+      inLanguage: 'id-ID',
+      image: baseImage,
+      publisher: {
+        '@type': 'Organization',
+        name: siteMetadata.publisher,
+        url: siteMetadata.siteUrl,
+        logo: baseImage,
+      },
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: `${siteMetadata.siteUrl}/fsaw-detection?query={search_term_string}`,
+        'query-input': 'required name=search_term_string',
+      },
+    },
+    {
+      '@context': 'https://schema.org',
       '@type': 'Organization',
       name: siteMetadata.publisher,
       url: siteMetadata.siteUrl,
-      logo: `${metadataBase.origin}/fsaw.png`,
+      logo: baseImage,
+      image: baseImage,
+      sameAs: siteMetadata.twitterHandle
+        ? [`https://twitter.com/${siteMetadata.twitterHandle.replace('@', '')}`]
+        : undefined,
     },
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: `${siteMetadata.siteUrl}/fsaw-detection?query={search_term_string}`,
-      'query-input': 'required name=search_term_string',
-    },
-  } as const;
+  ] as const;
 
   return (
     <html lang='id'>

@@ -18,6 +18,6 @@ export const siteMetadata = {
   publisher: 'Fuzzy SAW Lab',
   locale: 'id_ID',
   siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://skipsi-greenflag.vercel.app',
-  socialImage: '/kid-hero.webp',
+  socialImage: '/showcred.png',
   twitterHandle: '@fuzzysawlab',
 };
